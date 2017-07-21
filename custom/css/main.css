@@ -1,0 +1,19 @@
+.text-ellipsis-row-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+/*Remove glow*/
+.table-hover tr {
+  cursor: pointer;
+}
+
+.dtable th, .dtable td {
+    vertical-align: middle;
+}
+
+.card {
+  background-color: rgba(255,255,255,0.9);
+}
