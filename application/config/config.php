@@ -34,7 +34,7 @@ else if (!empty($_SERVER["HTTP_X_FORWARDED_PROTO"]) && $_SERVER["HTTP_X_FORWARDE
 }
 
 //$config['base_url']	= "http://jeanrijkaard.com/";
-$config['base_url'] = 'http://'.$_SERVER['SERVER_NAME'].'/MII/';
+$config['base_url'] = 'http://'.$_SERVER['SERVER_NAME'].'/mii/';
 
 /*
 |--------------------------------------------------------------------------

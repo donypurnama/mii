@@ -54,6 +54,7 @@ class Order extends CI_Controller {
       "menu" => $menu
     ], true);
     $this->settings["main"] = $this->load->view("main/createOrderForm", null, true);
+    $this->settings["modal"] = $this->load->view("modal/modal_checkpoint", null, true);
     $this->settings["footer"] = $this->load->view("footer/footer", null, true);
 
     $this->template->page($this->settings);
@@ -74,4 +75,24 @@ class Order extends CI_Controller {
 
     $this->template->page($this->settings);
   }
+
+  public function additem () {
+    $menu = [
+      "parent" => "order",
+      "child" => "orders"
+    ];
+
+    $this->settings["header"] = $this->load->view("header/header", null, true);
+    $this->settings["aside"] = $this->load->view("sidebar/aside", [
+      "menu" => $menu
+    ], true);
+    $this->settings["main"] = $this->load->view("main/additemForm", null, true);
+    $this->settings["footer"] = $this->load->view("footer/footer", null, true);
+
+    $this->template->page($this->settings);
+  }
+
+
+
+
 }
