@@ -13,7 +13,7 @@ class Order extends CI_Controller {
 
     public function index () {
       $menu = [
-        "parent" => "shipment",
+        "parent" => "order",
         "child" => ""
       ];
 
@@ -21,7 +21,7 @@ class Order extends CI_Controller {
       $this->settings["aside"] = $this->load->view("sidebar/aside", [
         "menu" => $menu
       ], true);
-      $this->settings["main"] = $this->load->view("main/main", null, true);
+      $this->settings["main"] = $this->load->view("main/order", null, true);
       $this->settings["footer"] = $this->load->view("footer/footer", null, true);
 
       $this->template->page($this->settings);
@@ -61,6 +61,9 @@ class Order extends CI_Controller {
   }
 
   public function detail () {
+
+    $soid = $this->uri->segment(3);
+
     $menu = [
       "parent" => "order",
       "child" => "orders"
@@ -70,7 +73,7 @@ class Order extends CI_Controller {
     $this->settings["aside"] = $this->load->view("sidebar/aside", [
       "menu" => $menu
     ], true);
-    $this->settings["main"] = $this->load->view("main/detailOrderForm", null, true);
+    $this->settings["main"] = $this->load->view("main/detailOrderForm", ["title" => "Detail Order", "param_soid" => $soid], true);
     $this->settings["footer"] = $this->load->view("footer/footer", null, true);
 
     $this->template->page($this->settings);
