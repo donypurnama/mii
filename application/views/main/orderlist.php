@@ -31,7 +31,7 @@
                 </tr>
               </tfoot>
               <tbody style="font-size:10px;">
-                <tr data-href="order/detail">
+                <tr data-href="order/detail/38536">
                     <td>38536</td>
                     <td>shopVOX Softball Team</td>
                     <td>Jerseys for Softball Team</td>
@@ -39,7 +39,7 @@
                     <td>12/17/2015</td>
                     <td>12/15/2015</td>
                 </tr>
-                <tr data-href="order/detail">
+                <tr data-href="order/detail/38510">
                     <td>38510</td>
                     <td>shopVOX Softball Team</td>
                     <td>Jerseys for Softball Team</td>
@@ -47,7 +47,7 @@
                     <td>12/16/2015</td>
                     <td>12/14/2015</td>
                 </tr>
-                <tr data-href="order/detail">
+                <tr data-href="order/detail/38497">
                     <td>38497</td>
                     <td>shopVOX Softball Team</td>
                     <td>Jerseys for Softball Team</td>

@@ -8,7 +8,7 @@
     </nav>
   </div>
   <div class="pull-right">
-    <a href="#" class="btn btn-danger pull-right"><i class="fa fa-chevron-left"></i> Cancel</a>
+    <a href="order/orders" class="btn btn-danger pull-right"><i class="fa fa-chevron-left"></i> Cancel</a>
   </div>
 </div>
 <section class="section">
