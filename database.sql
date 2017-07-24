@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS users (
   UNIQUE (user_name),
   INDEX (user_name)
 );
--- 
+--
 -- CREATE TABLE IF NOT EXISTS checkpoints ();
 --
 -- CREATE TABLE IF NOT EXISTS subcheckpoints ();
